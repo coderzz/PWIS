@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walk-through</title>
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	
+	<link rel="stylesheet" href="./css/stylem.css" />
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	
+	<>
+
+</head>
+<body>
+<div data-role="page" id="page1">
+		<div data-theme="a" data-role="header">
+			<h3>Piped Water Alert System</h3>
+			<div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="page3.html" data-transition="fade" data-theme="" data-icon="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="wlkm.html" data-transition="fade" data-theme="" data-icon="info">
+                        About
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	<div data-role="content">
+
+<h3>SEARCH BOX</h3>
+- The search box displays suggestion after user types at-least 2 alphabets.<br>
+- The search box displays suggestion in in 3 levels the following order(top-down):<br>
+<b>St</b>ate (at most 10)<br>
+<b>Di</B>strict, State (at most 10)<br>
+<b>Bl</b>ock, District, State (at most 10)<br>
+
+
+<br>
+<h3>RANGE SLIDER(setting the milestone)</h3>
+- The range(in percentage) of slider determines :<br>
+At state level(from search box), displaying those districts that have at-least one habitation reaching the milestone.<br>
+At district/block level(from search box), displaying those blocks that have at-least one habitation reaching the milestone.<br>
+At habitation level data of each block, displays list of habitation reaching the milestone.<br>
+<br>
+<h3> MAP ALERT </h3>
+- The circular markers(red[>=100],yellow[>=10],green[<10]) display the grouping of markers(marker clusters). <br>
+- Number on the circle displays how many markers are clustered under it and the blue polygon displays the way markers are spread over map.<br>
+- On selecting state from search suggestion, districts of that state are plotted on map.<br>
+- On selecting district from search suggestion, blocks of that state are plotted on map.<br>
+- On selecting district from search suggestion, blocks of that state are plotted on map.<br>
+
+</div>
+	</div>
+</body>
+</html>
